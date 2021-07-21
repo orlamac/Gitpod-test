@@ -10,8 +10,7 @@ actions:
     outputs:
       highly_sensitive:
         cohort: output/input.csv
-
-describe:
+  describe:
     run: python:latest python analysis/report.py
     needs: [generate_study_population]
     outputs:
